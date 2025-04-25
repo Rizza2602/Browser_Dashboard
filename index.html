@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Environment Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Part 0: Profile Header -->
+  <header>
+    <h1>Browser Environment Dashboard</h1>
+    <p><strong>Complete Name:</strong> Rizza C. Moralida</p>
+    <p><strong>Sex:</strong> Female</p>
+    <p><strong>Address:</strong> Zone 3, San Rafael Tigaon, Camarines Sur</p>
+    <p><strong>Course, Year, and Section:</strong> BSIT 2B</p>
+    <p><strong>Name of School:</strong> Partido State University</p>
+    <p><strong>Semester and Academic Year:</strong> 2nd Semester, AY 2024–2025</p>
+    <p><strong>Subject Code and Title:</strong> PF2- Event Driven Programming </p>
+    <p><strong>Name of Subject Instructor:</strong> Prof. Arjay Abio</p>
+  </header>
+
+  <!-- Part A: Browser Info -->
+  <section>
+    <h2>Browser Information</h2>
+    <ul class="info-list">
+      <li><strong>Browser Name and Version:</strong> <span id="browser"></span></li>
+      <li><strong>Platform (OS):</strong> <span id="platform"></span></li>
+      <li><strong>Java Enabled:</strong> <span id="java"></span></li>
+      <li><strong>Screen Resolution:</strong> <span id="resolution"></span></li>
+      <li><strong>Available Screen Size:</strong> <span id="availScreen"></span></li>
+      <li><strong>Color Depth:</strong> <span id="colorDepth"></span></li>
+    </ul>
+  </section>
+
+  <!-- Part B: Page Info -->
+  <section>
+    <h2>Page Information</h2>
+    <ul class="info-list">
+      <li><strong>Current URL:</strong> <span id="url"></span></li>
+      <li><strong>Hostname:</strong> <span id="hostname"></span></li>
+      <li><strong>Page Title:</strong> <span id="pageTitle"></span></li>
+    </ul>
+    <button onclick="changeTitle()">Change Page Title</button>
+  </section>
+
+  <!-- Part C: Navigation Controls -->
+  <section>
+    <h2>Navigation Controls</h2>
+    <button onclick="location.reload()">Reload Page</button>
+    <button onclick="redirect()">W3School</button>
+    <button onclick="history.back()">Go Back</button>
+    <button onclick="history.forward()">Go Forward</button>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
